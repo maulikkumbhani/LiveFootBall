@@ -1,18 +1,20 @@
 @font-face {
-  font-family: 'Themability-Fonts';
-  src:  url('themability-font/themability2f2d.eot?it42j3');
-  src:  url('themability-font/themability2f2d.eot?it42j3#iefix') format('embedded-opentype'),
-    url('themability-font/themability2f2d.ttf?it42j3') format('truetype'),
-    url('themability-font/themability2f2d.woff?it42j3') format('woff'),
-    url('themability-font/themability2f2d.svg?it42j3#icomoon') format('svg');
+  font-family: " footgoal-Fonts";
+  src: url(" footgoal-font/ footgoal2f2d.eot?it42j3");
+  src: url(" footgoal-font/ footgoal2f2d.eot?it42j3#iefix")
+      format("embedded-opentype"),
+    url(" footgoal-font/ footgoal2f2d.ttf?it42j3") format("truetype"),
+    url(" footgoal-font/ footgoal2f2d.woff?it42j3") format("woff"),
+    url(" footgoal-font/ footgoal2f2d.svg?it42j3#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Themability-Fonts' !important;
+  font-family: " footgoal-Fonts" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
