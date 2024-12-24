@@ -28,28 +28,44 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300&amp;family=Poppins:wght@300&amp;family=Roboto:wght@300&amp;display=swap"
     rel="stylesheet">
 
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
   <script type="module">
     // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+    import { database } from "https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
 
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyCeu81xTCxFUQiY9wgyYi9tr3kgHTWLmAc",
-      authDomain: "live-football-score-70645.firebaseapp.com",
-      projectId: "live-football-score-70645",
-      storageBucket: "live-football-score-70645.appspot.com",
-      messagingSenderId: "778475897155",
-      appId: "1:778475897155:web:305cb95d5bd4418b94aff6",
-      measurementId: "G-TEGEELG8JY"
+      apiKey: "AIzaSyAj001vr9MYGdhbzvhmp0af3Q5xeOZYt_Q",
+      authDomain: "footgoal---web.firebaseapp.com",
+      projectId: "footgoal---web",
+      storageBucket: "footgoal---web.firebasestorage.app",
+      messagingSenderId: "989451447258",
+      appId: "1:989451447258:web:17e08cb0ff257f3eb16ee3",
+      measurementId: "G-4YV3J5SYZT"
     };
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+  </script>
+
+  <script>
+    const dbRef = database.ref('Blogs');
+
+    dbRef.on('value', (snapshot) => {
+      const data = snapshot.val();
+      // Process the data and update your HTML
+      console.log(data); // Example: Log the data to the console
+    });
+
   </script>
 
 </head>
